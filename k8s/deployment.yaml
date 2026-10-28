@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: grade-calc-container
-          image: mithra1707/grade-calc:PUSH_1_COMMIT_SHA
+          image: mithra1707/grade-calc:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
           readinessProbe:
